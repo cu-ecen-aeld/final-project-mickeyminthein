@@ -9,3 +9,6 @@ This is the final project of Advanced Embedded Linux Development (Coursera).
 ## Schedule Page
 [Schedule Page](https://github.com/users/mickeyminthein/projects/6)
 
+
+# yocto-assignments-base
+Base repository for AESD Yocto assignments yocto-assignments-base/master
