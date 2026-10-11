@@ -5,9 +5,6 @@
 	path = meta-raspberrypi
 	url = https://git.yoctoproject.org/git/meta-raspberrypi
 	branch = scarthgap
-[submodule "meta-openembedded"]
-	path = meta-openembedded
-	url = https://git.openembedded.org/meta-openembedded
 [submodule "poky"]
 	path = poky
 	url = https://git.yoctoproject.org/poky
