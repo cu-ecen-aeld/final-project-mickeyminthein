@@ -10,7 +10,7 @@
 source poky/oe-init-build-env
 
 # CONFLINE="MACHINE = \"qemuarm64\""
-CONFLINE="MACHINE = \"raspberrypi3\""
+CONFLINE="MACHINE = \"raspberrypi3-64\""
 
 cat conf/local.conf | grep "${CONFLINE}" > /dev/null
 local_conf_info=$?

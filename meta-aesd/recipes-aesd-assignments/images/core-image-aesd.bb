@@ -1,6 +1,19 @@
 inherit core-image
 #CORE_IMAGE_EXTRA_INSTALL += "aesd-assignments"
-CORE_IMAGE_EXTRA_INSTALL += "openssh"
+#CORE_IMAGE_EXTRA_INSTALL += "openssh"
+CORE_IMAGE_EXTRA_INSTALL += " \
+    openssh \
+    wayland \
+    weston \
+    weston-init \
+    qtbase \
+    qtbase-plugins \
+    qtbase-examples \
+    picocom \
+    linux-firmware-bcm43430 \
+    wpa-supplicant \
+    iw \
+"
 inherit extrausers
 # See https://docs.yoctoproject.org/singleindex.html#extrausers-bbclass
 # We set a default password of root to match our busybox instance setup
