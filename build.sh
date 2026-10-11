@@ -9,7 +9,8 @@ git submodule update
 # local.conf won't exist until this step on first execution
 source poky/oe-init-build-env
 
-CONFLINE="MACHINE = \"qemuarm64\""
+# CONFLINE="MACHINE = \"qemuarm64\""
+CONFLINE="MACHINE = \"raspberrypi3-64\""
 
 cat conf/local.conf | grep "${CONFLINE}" > /dev/null
 local_conf_info=$?
@@ -23,15 +24,15 @@ else
 fi
 
 
-bitbake-layers show-layers | grep "meta-aesd" > /dev/null
-layer_info=$?
+# bitbake-layers show-layers | grep "meta-aesd" > /dev/null
+# layer_info=$?
 
-if [ $layer_info -ne 0 ];then
-	echo "Adding meta-aesd layer"
-	bitbake-layers add-layer ../meta-aesd
-else
-	echo "meta-aesd layer already exists"
-fi
+# if [ $layer_info -ne 0 ];then
+# 	echo "Adding meta-aesd layer"
+# 	bitbake-layers add-layer ../meta-aesd
+# else
+# 	echo "meta-aesd layer already exists"
+# fi
 
 set -e
 bitbake core-image-aesd
